@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: 900px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  padding: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+}
+
+.header-left h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-nav li a {
+  padding: 10px;
+  text-decoration: none;
+  transition: ease 0.3s;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-nav li a:after {
+  width: 0%;
+  position: absolute;
+  height: 2px;
+  background-color: black;
+  content: "";
+  left: 50%;
+  transition: 0.1s ease;
+  top: 30px;
+}
+
+.header-nav li a:hover:after {
+  width: 90%;
+  left: 5%;
+  transition: 0.1s ease;
+}
+
+.current-page:before {
+  width: 90%;
+  left: 5%;
+  position: absolute;
+  height: 2px;
+  background-color: lightgrey;
+  content: "";
+  top: 30px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  font-family: "Consolas", monospace;
+}
+
+.picture {
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  width: 100%;
+}
+
+.main-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-center p {
+  width: 40%;
+}
