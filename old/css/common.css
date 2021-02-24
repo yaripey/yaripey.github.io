@@ -163,7 +163,7 @@ main {
   height: 5px;
   background: black;
   position: absolute;
-  left: 0px;
+  right: 0px;
   display: block;
   content: "";
 }

@@ -7,4 +7,5 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileHeader.classList.toggle('opened-header')
     logo.classList.toggle('closed-logo')
   })
+
 })
