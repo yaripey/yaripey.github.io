@@ -6,10 +6,10 @@
   <div class="header-right">
     <nav>
       <ul class="header-nav">
-        <li><a class="current-page" href="index.html">Home</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a {% if pageName === 'home'%}class="current-page"{% endif %} href="index.html">Home</a></li>
+        <li><a {% if pageName === 'bio'%}class="current-page"{% endif %} href="bio.html">Bio</a></li>
+        <li><a {% if pageName === 'myworks'%}class="current-page"{% endif %} href="myworks.html">My Works</a></li>
+        <li><a {% if pageName === 'contacts'%}class="current-page"{% endif %} href="contacts.html">Contacts</a></li>
       </ul>
     </nav>
   </div>
